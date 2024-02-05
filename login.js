@@ -18,10 +18,16 @@ function cliquei() {
     }
 }
 
-
-function mostrarsenha() {
+function mostrarsenha(){
     
+    if (this.checked) {
+        userPassword.type = 'text'
+    } else {
+        userPassword.type = 'password'
+    }
 }
 
-showPassword.addEventListener("click", mostrarsenha)
+ 
+
+showPassword.addEventListener("change", mostrarsenha)
 buttonAcess.addEventListener("click", cliquei)
